@@ -15,10 +15,13 @@
     <header class="bg-dark w-100  p-5 " style="height: 500px;">
         <div class="container bg-light">
             <h1 class="text-dark text-center">Fantasy Football</h1>
-            <p class="text-dark text-center">Fantasy football is a game in which participants assemble an imaginary team of real life football players and score points based on those players' actual statistical performance or their perceived contribution on the field of play.</p>
+            <p class="text-dark text-center">Fantasy football is a game in which participants assemble an imaginary team
+                of real life football players and score points based on those players' actual statistical performance or
+                their perceived contribution on the field of play.</p>
         </div>
     </header>
 
+    <!-- player section start -->
     <main class="bg-dark">
         <div class="m-5 ">
             <div class="row">
@@ -27,8 +30,10 @@
                         <img src="images/player/Benzema.png" class="card-img-top" alt="#">
                         <div class="card-body">
                             <h5 class="card-title text-center">Karim Benzema</h5>
-                            <div class="d-flex justify-content-center align-item-center">
-                                <button class="btn btn-primary btn-lg ps-5 pe-5">Select</button>
+                            <p class="text-center fs-5">Goal:44 &nbsp; Assists:15</p>
+                            <div class="d-grid gap-2 col-6 mx-auto justify-content-center align-item-center">
+                                <button class="btn btn-primary btn-lg ps-5 pe-5 "
+                                    onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -38,47 +43,46 @@
                         <img src="images/player/vini.png" class="card-img-top" alt="#">
                         <div class="card-body">
                             <h5 class="card-title text-center">Vinicius JR</h5>
-
-                            <div class="d-flex justify-content-center align-item-center">
-                                <button class="btn btn-primary btn-lg ps-5 pe-5">Select</button>
+                            <p class="text-center fs-5">Goal:22 &nbsp; Assists:16</p>
+                            <div class="d-grid gap-2 col-6 mx-auto justify-content-center align-item-center">
+                                <button class="btn btn-primary btn-lg ps-5 pe-5" onclick="selectPlayer(this)">Select
+                                </button>
                             </div>
                         </div>
                     </div>
-
-
-
 
                     <div class="card  p-3 m-3" style="width: 18rem;">
                         <img src="images/player/Valavarde.png" class="card-img-top" alt="#">
                         <div class="card-body">
-                            <h5 class="card-title text-center">
-                                Federico Valverde</h5>
-                            <div class="d-flex justify-content-center align-item-center">
-                                <button class="btn btn-primary btn-lg ps-5 pe-5">Select</button>
+                            <h5 class="card-title text-center">Federico Valverde</h5>
+                            <p class="text-center fs-5">Goal:9 &nbsp; Assists:3</p>
+                            <div class="d-grid gap-2 col-6 mx-auto justify-content-center align-item-center">
+                                <button class="btn btn-primary btn-lg ps-5 pe-5"
+                                    onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
-
 
                     <div class="card  p-3 m-3" style="width: 18rem;">
                         <img src="images/player/Modric.png" class="card-img-top" alt="#">
                         <div class="card-body">
                             <h5 class="card-title text-center">Luka Modric</h5>
-
-                            <div class="d-flex justify-content-center align-item-center">
-                                <button class="btn btn-primary btn-lg ps-5 pe-5">Select</button>
+                            <p class="text-center fs-5">Goal:8 &nbsp; Assists:5</p>
+                            <div class="d-grid gap-2 col-6 mx-auto justify-content-center align-item-center">
+                                <button class="btn btn-primary btn-lg ps-5 pe-5"
+                                    onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
-
 
                     <div class="card p-3 m-3" style="width: 18rem;">
                         <img src="images/player/Casemiro.png" class="card-img-top" alt="#">
                         <div class="card-body">
                             <h5 class="card-title text-center">Casemiro</h5>
-
-                            <div class="d-flex justify-content-center align-item-center">
-                                <button class="btn btn-primary btn-lg ps-5 pe-5">Select</button>
+                            <p class="text-center fs-5">Goal:9 &nbsp; Assists:5</p>
+                            <div class="d-grid gap-2 col-6 mx-auto justify-content-center align-item-center">
+                                <button class="btn btn-primary btn-lg ps-5 pe-5"
+                                    onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -87,105 +91,87 @@
                         <img src="images/player/Kross.png" class="card-img-top" alt="#">
                         <div class="card-body">
                             <h5 class="card-title text-center">Toni Kroos</h5>
-
-                            <div class="d-flex justify-content-center align-item-center">
-                                <button class="btn btn-primary btn-lg ps-5 pe-5">Select</button>
+                            <p class="text-center fs-5">Goal:5 &nbsp; Assists:2</p>
+                            <div class="d-grid gap-2 col-6 mx-auto justify-content-center align-item-center">
+                                <button class="btn btn-primary btn-lg ps-5 pe-5"
+                                    onclick="selectPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-
                 <div class="col-3">
                     <div class="card p-3 m-3" style="width: 18rem;">
 
                         <div class="card-body">
-                            <h3 class="text-center">Selected 5</h3>
+                            <h3 class="text-center">Best 5</h3>
                             <ol>
-                                <li>Player1</li>
-                                <li>Player1</li>
-                                <li>Player1</li>
-                                <li>Player1</li>
-                                <li>Player1</li>
-
                             </ol>
                         </div>
                     </div>
 
-
-
-
                     <div class="card col-3 p-3 m-3" style="width: 18rem;">
-
                         <div class="card-body">
                             <div>
                                 <h2 class="text-center">Budget</h2>
 
                                 <div class="w-100 d-flex pt-3">
                                     <p class="w-50 pt-2">Per player</p>
-                                    <input class="w-50" type="text">
+                                    <input class="w-50" type="text" id="per-player-input">
 
                                 </div>
                                 <div class="d-flex justify-content-center text-align-center pt-3">
-                                    <button type="button" class="btn btn-primary btn-lg">Calculate</button>
+                                    <button id="calculate-btn" type="button"
+                                        class="btn btn-primary btn-lg">Calculate</button>
                                 </div>
 
                                 <div class="pt-3">
-                                    <p>player expenses $<span>5000</span></p>
+                                    <p>player expenses $<span id="player-expenses">000</span></p>
                                 </div>
 
                                 <div class="w-100 d-flex pt-3">
                                     <p class="w-50 pt-2">Manager</p>
-                                    <input class="w-50" type="text">
+                                    <input class="w-50" type="text" id="manager-input">
 
                                 </div>
-
-
 
                                 <div class="w-100 d-flex pt-3">
                                     <p class="w-50 pt-2">Coach</p>
-                                    <input class="w-50" type="text">
+                                    <input class="w-50" type="text" id="coach-input">
 
                                 </div>
                                 <div class="d-flex justify-content-center text-align-center pt-3">
-                                    <button type="button" class="btn btn-primary btn-lg">Calculate Total</button>
+                                    <button id="total-btn" type="button" class="btn btn-primary btn-lg">Calculate
+                                        Total</button>
                                 </div>
 
                                 <div class="d-flex pt-3 justify-content-between">
                                     <div>
                                         Total
                                     </div>
-
                                     <div>
-                                        <h5>$<span>11000</span></h5>
+                                        <h5>$<span id="total-cost">000</span></h5>
                                     </div>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
                 </div>
 
-
-
-
             </div>
-
-
-
 
         </div>
 
-
-
     </main>
 
+ <!-- player section end -->
 
 
 
 
+    <script src="common.js"></script>
     <script src="total.js"></script>
     <!-- bootsstrap cdn -->
     <script src="bootsstrap/bootstrap.min.js"></script>
